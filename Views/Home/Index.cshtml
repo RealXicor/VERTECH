@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+        <link rel="stylesheet" href="/CSS/StyleSheet.css" type="text/css">
+        <title>VERTECH</title>
+    </head>
+    <body>
+        <nav>
+            <div class="NavigationBar">
+                <ul>
+                    <li><a href="index.html" class="activePage">HOME</a></li>
+                    <li><a href="shop.html">SHOP TECH</a></li>
+                    <li><a href="#">WHAT'S POPULAR</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="introImg">
+            <img src="/Images/1.jpg">
+        </div>
+        <div class="titleHeading">
+            <h1>VERTECH</h1>
+        </div>
+        <div class="buttonDiv">
+            <button type="button">LEARN MORE</button>
+            <button type="button" id="exploreBtn">EXPLORE</button>
+        </div>
+        <div class="sliderTitle">
+            <h1>WHAT'S TRENDING</h1>
+        </div>
+        <div class="sliderBody">
+            <img src="/Images/macbook1.png" class="SlideIMG" alt="SlidingImage">
+            <img src="/Images/iPhoneSE.png" class="SlideIMG" alt="SlidingImage">
+            <img src="/Images/AirPodsMAX.png" class="SlideIMG" alt="SlidingImage">
+            <img src="/Images/AirPodsPRO.png" class="SlideIMG" alt="SlidingImage">
+            <button class="LEFT-B" onclick="nextIMG(-1)">&#10094;</button>
+            <button class="RIGHT-B" onclick="nextIMG(1)">&#10095;</button>
+            <script src="/Scripts/sliderScript.js"></script>
+        </div>
+        <div class="footerBlock">
+            <a href="https://www.facebook.com" target="blank"><img src="~/Images/FB-icon.png"/></a>
+            <a href="https://www.twitter.com" target="blank"><img src="~/Images/TW-icon.png"/></a>
+            <a href="https://www.instagram.com" target="blank"><img src="~/Images/IG-icon.png"/></a>
+        </div>
+    </body>
