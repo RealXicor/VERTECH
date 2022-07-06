@@ -10,6 +10,7 @@ namespace VERTECH.Controllers
         }
         public IActionResult AboutUs()
         {
+  
             return View();
         }
     }

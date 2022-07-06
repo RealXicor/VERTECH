@@ -25,7 +25,7 @@
     </nav>
     <div class="InquireNowOverlay">
         <h1>INQUIRE NOW</h1>
-        <form method="post" action="InquireData">
+        <form method="post" action="/Inquiries/InquireData">
             <label for="1">First Name:</label>
             <input type="text" id="1" required class="fn" name="firstName"/><br />
             <label for="2">Last Name:</label>
@@ -33,9 +33,9 @@
             <label for="3">Email:</label>
             <input type="email" id="3" required class="efield" name="userEmail"/><br />
             <label for="4">Product Name:</label>
-            <input type="text" id="4" class="PN" readonly name="productN" value="@ViewBag.ProductName"/><br />
+            <input type="text" id="4" class="PN" readonly name="productName" value="@ViewBag.ProductName"/><br />
             <label for="5">Price:</label>
-            <input type="text" id="5" class="P" readonly name="price" value="@ViewBag.ProductPrice"/><br />
+            <input type="text" id="5" class="P" readonly name="productPrice" value="@ViewBag.ProductPrice"/><br />
             <label for="6">Message:</label>
             <textarea required maxlength="300" resize=none; id="6" class="msgBox" name="userMsg"></textarea><br />
             <button type="submit">Submit</button>
