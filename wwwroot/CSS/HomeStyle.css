@@ -93,7 +93,10 @@
     color: white;
     background-color: transparent;
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+}
 .footerBlock {
     background-color: white;
     color: black;
@@ -106,4 +109,13 @@
 .footerBlock img {
     height: 90px;
     width: auto;
+}
+.redirectingDiv {
+    width: auto;
+    font-family: abel;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    color: black;
+    font-size: 14px;
 }
