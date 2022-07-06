@@ -7,18 +7,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
-        <link rel="stylesheet" href="/CSS/StyleSheet.css" type="text/css">
+        <link rel="stylesheet" href="/CSS/HomeNavigationStyle.css" type="text/css">
+        <link rel="stylesheet" href="/CSS/HomeStyle.css" type="text/css">
         <title>VERTECH</title>
     </head>
     <body>
         <nav>
             <div class="NavigationBar">
                 <ul>
-                    <li><a href="index.html" class="activePage">HOME</a></li>
-                    <li><a href="shop.html">SHOP TECH</a></li>
-                    <li><a href="#">WHAT'S POPULAR</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="@Url.Action("Index", "Home")" class="activePage">HOME</a></li>
+                    <li><a href="@Url.Action("ShopNow", "Shop")">SHOP TECH</a></li>
+                    <li><a href="@Url.Action("AboutUs", "Home")">ABOUT</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,8 +28,8 @@
             <h1>VERTECH</h1>
         </div>
         <div class="buttonDiv">
-            <button type="button">LEARN MORE</button>
-            <button type="button" id="exploreBtn">EXPLORE</button>
+            <button type="button" onclick="window.location.replace('@Url.Action("AboutUs","Home")')">LEARN MORE</button>
+            <button type="button" id="exploreBtn" onclick="window.location.replace('@Url.Action("ShopNow","Shop")')">EXPLORE</button>
         </div>
         <div class="sliderTitle">
             <h1>WHAT'S TRENDING</h1>

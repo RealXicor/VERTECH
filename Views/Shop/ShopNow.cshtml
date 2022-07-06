@@ -1,0 +1,89 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" href="/CSS/PageNavigation.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/ShopNowStyle.css" type="text/css">
+    <title>VERTECH - Shop</title>
+</head>
+<body>
+    <nav>
+        <div class="NavigationBar">
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">HOME</a></li>
+                <li><a href="@Url.Action("ShopNow", "Shop")" class="activePage">SHOP TECH</a></li>
+                <li><a href="@Url.Action("AboutUs", "Home")">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="titleDiv">
+        <h1>SHOP NOW</h1>
+    </div>
+    <div class="ProductGrid">
+        <div class="ProductDiv">
+            <img src="~/Images/ShopNowIMGs/Products/AppleWatchSeries7.png"/><br />
+            @{
+                var pName1 = "Apple Watch Series 7";
+                var pPrice1 = "$700";
+            }
+            <h2>@pName1</h2>
+            <h3>@pPrice1</h3>
+            <button class="hideElement" type="button" onclick="window.location.replace('@Url.Action("InquireNow","Shop", new {productName = @pName1, productPrice = @pPrice1})')">INQURE</button>
+        </div>
+        <div class="ProductDiv">
+            <img src="~/Images/ShopNowIMGs/Products/AirPodsPro.png"/><br />
+            @{
+                var pName2 = "AirPods Pro";
+                var pPrice2 = "$450";
+            }
+            <h2>AirPods Pro</h2>
+            <h3>Price: $650</h3>
+            <button class="hideElement" type="button" onclick="window.location.replace('@Url.Action("InquireNow","Shop", new {productName = @pName2, productPrice = @pPrice2})')">INQURE</button>
+        </div>
+         <div class="ProductDiv">
+            <img src="~/Images/ShopNowIMGs/Products/HomePodMini.png"/><br />
+            @{
+                var pName3 = "HomePod Mini";
+                var pPrice3 = "$99";
+            }
+            <h2>HomePod Mini</h2>
+            <h3>Price: $99</h3>
+            <button class="hideElement" type="button" onclick="window.location.replace('@Url.Action("InquireNow","Shop", new {productName = @pName3, productPrice = @pPrice3})')">INQURE</button>
+        </div>
+         <div class="ProductDiv">
+            <img src="~/Images/ShopNowIMGs/Products/AppleTV4K.png"/><br />
+            @{
+                var pName4 = "Apple TV 4K";
+                var pPrice4 = "$199";
+            }
+            <h2>Apple TV 4K</h2>
+            <h3>Price: $199</h3>
+            <button class="hideElement" type="button" onclick="window.location.replace('@Url.Action("InquireNow","Shop", new {productName = @pName4, productPrice = @pPrice4})')">INQURE</button>
+        </div>
+         <div class="ProductDiv">
+            <img src="~/Images/ShopNowIMGs/Products/ApplePencil.png"/><br />
+            @{
+                var pName5 = "Apple Pencil";
+                var pPrice5 = "$130";
+            }
+            <h2>Apple Pencil</h2>
+            <h3>Price: $130</h3>
+            <button class="hideElement" type="button" onclick="window.location.replace('@Url.Action("InquireNow","Shop", new {productName = @pName5, productPrice = @pPrice5})')">INQURE</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footerBlock">
+            <a href="https://www.facebook.com" target="blank"><img src="~/Images/FB-icon.png"/></a>
+            <a href="https://www.twitter.com" target="blank"><img src="~/Images/TW-icon.png"/></a>
+            <a href="https://www.instagram.com" target="blank"><img src="~/Images/IG-icon.png"/></a>
+        </div>
+    </footer>
+</body>
+</html>

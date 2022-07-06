@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link rel="stylesheet" href="/CSS/PageNavigation.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/AboutUsStyle.css" type="text/css">
+    <title>VERTECH - About Us</title>
+</head>
+<body>
+    <nav>
+        <div class="NavigationBar">
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">HOME</a></li>
+                <li><a href="@Url.Action("ShopNow", "Shop")">SHOP TECH</a></li>
+                <li><a href="@Url.Action("AboutUs", "Home")" class="activePage">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="AboutUsOverlay">
+        <h1>ABOUT US</h1>
+        <p>VERTECH is a leading online store for lat
+            est tech products and tech news. From providing top quality products to 24/7 customer support, Vertch covers it all. Daily updation of news and products.</p>
+        <p>We promise our customers with a quality that no one else offers. Also, all of our products come with a one year warranty that can be claimed anywhere within Pakistan.</p>
+        <button type="button" id="backHomeBtn" onclick="window.location.replace('@Url.Action("Index","Home")')">BACK TO HOME</button>
+    </div>
+    <footer>
+        <div class="footerBlock">
+            <a href="https://www.facebook.com" target="blank"><img src="~/Images/FB-icon.png"/></a>
+            <a href="https://www.twitter.com" target="blank"><img src="~/Images/TW-icon.png"/></a>
+            <a href="https://www.instagram.com" target="blank"><img src="~/Images/IG-icon.png"/></a>
+    </div>
+    </footer>
+</body>
+</html>
